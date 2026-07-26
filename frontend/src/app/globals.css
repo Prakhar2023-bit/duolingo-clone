@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  /* Duolingo Brand Colors */
+  --color-duo-green: #58cc02;
+  --color-duo-green-light: #89e219;
+  --color-duo-green-dark: #58a700;
+  
+  --color-duo-blue: #1cb0f6;
+  --color-duo-blue-light: #7dd6fe;
+  --color-duo-blue-dark: #1899d6;
+  
+  --color-duo-gray: #e5e5e5;
+  --color-duo-gray-dark: #afafaf;
+  
+  --color-duo-red: #ff4b4b;
+  --color-duo-red-dark: #ea2b2b;
+  
+  --color-duo-yellow: #ffc800;
+}
