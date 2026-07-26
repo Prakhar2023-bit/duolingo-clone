@@ -13,7 +13,7 @@ app = FastAPI(title="Duolingo Clone API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"], # The Next.js dev server url
+    allow_origins=["*"], # The Next.js dev server url
     allow_credentials=True,
     allow_methods=["*"], # Allows GET, POST, PUT, DELETE, etc.
     allow_headers=["*"],
