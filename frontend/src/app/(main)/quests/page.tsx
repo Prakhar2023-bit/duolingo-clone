@@ -6,7 +6,7 @@ export const dynamic = "force-dynamic";
 
 export default async function QuestsPage() {
   // Fetch the course data to dynamically get your current unit
-  const res = await fetch("http://127.0.0.1:8000/courses/1", { cache: "no-store" });
+  const res = await fetch("https://duolingo-clone-backend-370q.onrender.com/courses/1", { cache: "no-store" });
   
   if (!res.ok) {
     return <div>Failed to load quests data.</div>;

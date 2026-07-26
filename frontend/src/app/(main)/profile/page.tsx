@@ -4,7 +4,7 @@ import { Zap, Flame, Heart } from "lucide-react";
 export const dynamic = "force-dynamic";
 
 export default async function ProfilePage() {
-  const res = await fetch("http://127.0.0.1:8000/users/1", { 
+  const res = await fetch("https://duolingo-clone-backend-370q.onrender.com/users/1", { 
     cache: "no-store" 
   });
 

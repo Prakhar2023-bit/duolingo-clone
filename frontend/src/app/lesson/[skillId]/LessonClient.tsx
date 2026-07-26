@@ -126,7 +126,7 @@ export function LessonClient({ initialHearts, exercises }: LessonClientProps) {
       if (currentIndex + 1 >= exerciseQueue.length) {
         try {
           // Send the updated stats to FastAPI
-          await fetch("http://127.0.0.1:8000/users/1/progress", {
+          await fetch("https://duolingo-clone-backend-370q.onrender.com/users/1/progress", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({

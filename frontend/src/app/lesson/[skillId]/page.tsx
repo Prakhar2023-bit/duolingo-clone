@@ -5,8 +5,8 @@ export default async function LessonPage(props: { params: Promise<{ skillId: str
   const params = await props.params;
 
   // 2. Fetch the entire course to extract the specific skill's exercises
-  const res = await fetch("http://127.0.0.1:8000/courses/1", { cache: "no-store" });
-  const userRes = await fetch("http://127.0.0.1:8000/users/1", { cache: "no-store" });
+  const res = await fetch("https://duolingo-clone-backend-370q.onrender.com/courses/1", { cache: "no-store" });
+  const userRes = await fetch("https://duolingo-clone-backend-370q.onrender.com/users/1", { cache: "no-store" });
 
   if (!res.ok || !userRes.ok) {
     return <div>Error loading lesson data.</div>;

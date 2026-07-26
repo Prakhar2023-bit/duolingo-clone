@@ -5,8 +5,8 @@ import Link from "next/link";
 export const dynamic = "force-dynamic";
 
 export default async function Home() {
-  const res = await fetch("http://127.0.0.1:8000/courses/1", { cache: "no-store" });
-  const userRes = await fetch("http://127.0.0.1:8000/users/1", { cache: "no-store" });
+  const res = await fetch("https://duolingo-clone-backend-370q.onrender.com/courses/1", { cache: "no-store" });
+  const userRes = await fetch("https://duolingo-clone-backend-370q.onrender.com/users/1", { cache: "no-store" });
 
   if (!res.ok || !userRes.ok) {
     return <div>Failed to load course data.</div>;
